@@ -1,0 +1,26 @@
+   # Dependências
+   node_modules/
+   */node_modules/
+   
+   # Arquivos de ambiente
+   .env
+   *.env.local
+   
+   # Builds
+   dist/
+   build/
+   
+   # Logs
+   logs
+   *.log
+   
+   # IDE
+   .idea/
+   .vscode/
+   
+   # Android
+   android/build/
+   android/app/build/
+   android/.gradle/
+   android/local.properties
+   *.hprof
