@@ -9,9 +9,9 @@
         // Serve os ficheiros estáticos da pasta 'dist' (onde o build do Vite coloca os ficheiros)
         app.use(express.static(path.join(__dirname, 'dist')));
 
-        // Para qualquer outra rota GET não reconhecida (ex: /login, /dashboard),
+        // Para qualquer outra rota GET não reconhecida que comece com / (ex: /login, /dashboard),
         // envia o index.html para que o routing do React (React Router) funcione
-        app.get('*', (req, res) => {
+        app.get('/*', (req, res) => {
           res.sendFile(path.join(__dirname, 'dist', 'index.html'));
         });
 
